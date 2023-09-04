@@ -10,6 +10,7 @@ res.setHeader('Content-Type', 'text/plain')
             break;
     
         default:
+            // for redirection we use the setHeaders and target the location header and give it a new route
             path += "error.html"
             break;
     }
